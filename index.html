@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tony Vierra | Electrical Engineering Portfolio</title>
-  <meta name="description" content="Tony Vierra — Electrical Engineering (UCLA). Project portfolio: Jetson follower robot, STM32 embedded systems, line-following car, ArduPilot simulation, and LLM-assisted tooling." />
+  <title>Anthony Vierra | Electrical Engineering Portfolio</title>
+  <meta name="description" content="Anthony Vierra — Electrical Engineering (UCLA). Project portfolio: Jetson follower robot, STM32 embedded systems, line-following car, ArduPilot simulation, and LLM-assisted tooling." />
 
   <style>
     :root{
@@ -74,7 +74,7 @@
     }
 
     .wrap{
-      max-width: 1040px;
+      max-width: 980px;
       margin: 0 auto;
       padding: 28px 18px 90px;
     }
@@ -145,8 +145,6 @@
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       padding: 22px 20px;
-      overflow:hidden;
-      position:relative;
     }
     .hero h2{
       margin:0 0 8px;
@@ -217,7 +215,6 @@
       border: 1px solid var(--border);
       background: var(--panel);
       border-radius: var(--radius);
-      box-shadow: none;
       overflow:hidden;
     }
 
@@ -284,16 +281,6 @@
 
     .section-body{
       padding: 14px 16px 16px;
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-
-    @media (min-width: 900px){
-      .section-body{
-        grid-template-columns: 1.05fr 0.95fr;
-        align-items:start;
-      }
     }
 
     .textblock p{
@@ -317,38 +304,6 @@
     }
     li{ margin: 6px 0; }
 
-    /* Media / image placeholder */
-    .media{
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.03);
-      border-radius: var(--radius);
-      padding: 12px;
-    }
-    .media .box{
-      border-radius: 14px;
-      border: 1px dashed rgba(255,255,255,0.22);
-      background: rgba(255,255,255,0.03);
-      height: 210px;
-      display:grid;
-      place-items:center;
-      color: var(--muted2);
-      text-align:center;
-      padding: 14px;
-    }
-    .media .box strong{
-      color: var(--muted);
-      font-weight: 600;
-      display:block;
-      margin-bottom: 6px;
-    }
-    .media .note{
-      margin-top: 10px;
-      color: var(--muted2);
-      font-size: 12px;
-      font-family: var(--mono);
-    }
-
-    /* Footer */
     footer{
       margin-top: 22px;
       padding-top: 16px;
@@ -362,7 +317,6 @@
       flex-wrap:wrap;
     }
 
-    /* Accessibility */
     .sr-only{
       position:absolute;
       width:1px;height:1px;
@@ -384,7 +338,6 @@
     <div class="topbar">
       <div class="nameblock">
         <div class="mark" aria-hidden="true">
-          <!-- simple circuit mark -->
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M5 8h14M5 16h14" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
             <path d="M12 6v12" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
@@ -404,19 +357,18 @@
         <button class="btn" id="themeBtn" type="button" aria-label="Toggle theme">
           🌓 Theme
         </button>
-        <!-- Update these with your real links -->
-        <a class="btn" href="mailto:your.email@ucla.edu">✉ Email</a>
-        <a class="btn" href="https://github.com/yourusername" target="_blank" rel="noreferrer">↗ GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noreferrer">↗ LinkedIn</a>
+        <a class="btn" href="mailto:vierramarketing@gmail.com">✉ Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/anthony-vierra-pinecrest" target="_blank" rel="noreferrer">
+          ↗ LinkedIn
+        </a>
       </div>
     </div>
 
-    <!-- Clean, clear introduction -->
     <section class="hero" aria-label="Introduction">
       <h2>Projects Portfolio</h2>
       <p>
-        This site contains my project write-ups in a clean, scannable format.
-        Each project below uses the same wording as my portfolio PDF.
+        I’m an Electrical Engineering student at UCLA focused on robotics, embedded systems, and hands-on debugging.
+        Below are my projects, listed in order, with clear descriptions and scope.
       </p>
 
       <div class="mini" aria-label="Quick tags">
@@ -436,7 +388,6 @@
       </div>
     </section>
 
-    <!-- Navigation pills -->
     <nav class="nav" aria-label="Project navigation">
       <div class="navlinks">
         <a class="pill" href="#p1">Project 1</a>
@@ -457,7 +408,6 @@
         <div class="section-header">
           <div class="section-title">
             <div class="icon" aria-hidden="true">
-              <!-- robot icon -->
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
                 <path d="M9 3h6v3H9V3Z" stroke="white" stroke-width="1.6"/>
                 <path d="M7 8h10a3 3 0 0 1 3 3v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-5a3 3 0 0 1 3-3Z" stroke="white" stroke-width="1.6"/>
@@ -506,19 +456,6 @@
               <li>Implement proper power separation between motors and compute during full system integration</li>
             </ul>
           </div>
-
-          <aside class="media" aria-label="Project 1 media">
-            <div class="box">
-              <div>
-                <strong>Add an image for Project 1</strong>
-                Jetson setup, sensor stack, or a quick block diagram (camera → Jetson → control).
-              </div>
-            </div>
-            <div class="note">
-              To add an image: create an /assets folder and replace this box with an &lt;img&gt; tag.
-              Example: &lt;img src="assets/project1.jpg" alt="Jetson follower vehicle setup"&gt;
-            </div>
-          </aside>
         </div>
       </section>
 
@@ -527,7 +464,6 @@
         <div class="section-header">
           <div class="section-title">
             <div class="icon" aria-hidden="true">
-              <!-- chip icon -->
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
                 <path d="M7 7h10v10H7V7Z" stroke="white" stroke-width="1.6"/>
                 <path d="M4 9h3M4 15h3M17 9h3M17 15h3M9 4v3M15 4v3M9 17v3M15 17v3" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
@@ -569,18 +505,6 @@
               <li>Debugged baud rate mismatches, unstable data, and timing-related communication issues</li>
             </ul>
           </div>
-
-          <aside class="media" aria-label="Project 2 media">
-            <div class="box">
-              <div>
-                <strong>Add an image for Project 2</strong>
-                Scope screenshot, UART timing notes, or a simple wiring diagram.
-              </div>
-            </div>
-            <div class="note">
-              Keep it simple. One clean screenshot is better than five cluttered images.
-            </div>
-          </aside>
         </div>
       </section>
 
@@ -589,7 +513,6 @@
         <div class="section-header">
           <div class="section-title">
             <div class="icon" aria-hidden="true">
-              <!-- track icon -->
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
                 <path d="M7 3c-2 2-2 16 0 18M17 3c2 2 2 16 0 18" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
                 <path d="M12 4v2M12 8v2M12 12v2M12 16v2M12 20v0" stroke="white" stroke-width="1.6" stroke-linecap="round" opacity="0.85"/>
@@ -623,18 +546,6 @@
               <li>Tested and tuned logic to maintain stable line tracking</li>
             </ul>
           </div>
-
-          <aside class="media" aria-label="Project 3 media">
-            <div class="box">
-              <div>
-                <strong>Add an image for Project 3</strong>
-                Photo of the car, sensor placement, or the track test setup.
-              </div>
-            </div>
-            <div class="note">
-              Ideal: one photo + one small diagram showing IR sensors under the chassis.
-            </div>
-          </aside>
         </div>
       </section>
 
@@ -643,7 +554,6 @@
         <div class="section-header">
           <div class="section-title">
             <div class="icon" aria-hidden="true">
-              <!-- drone icon -->
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
                 <path d="M7 7l3 3M17 7l-3 3M7 17l3-3M17 17l-3-3" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
                 <circle cx="7" cy="7" r="2" stroke="white" stroke-width="1.4"/>
@@ -685,18 +595,6 @@
               <li>Control outputs remained within the ArduPilot simulation environment</li>
             </ul>
           </div>
-
-          <aside class="media" aria-label="Project 4 media">
-            <div class="box">
-              <div>
-                <strong>Add an image for Project 4</strong>
-                Screenshot of ArduPilot sim, the target vehicle in sim, or a chart of extracted metrics.
-              </div>
-            </div>
-            <div class="note">
-              If you only add one screenshot to the whole site, add it here.
-            </div>
-          </aside>
         </div>
       </section>
 
@@ -705,7 +603,6 @@
         <div class="section-header">
           <div class="section-title">
             <div class="icon" aria-hidden="true">
-              <!-- automation icon -->
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
                 <path d="M9 3h6v2H9V3Z" fill="white" opacity="0.9"/>
                 <path d="M7 8h10a3 3 0 0 1 3 3v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-6a3 3 0 0 1 3-3Z" stroke="white" stroke-width="1.6"/>
@@ -738,24 +635,11 @@
               <li>Focused on automation and repeatable evaluation workflows</li>
             </ul>
           </div>
-
-          <aside class="media" aria-label="Project 5 media">
-            <div class="box">
-              <div>
-                <strong>Add an image for Project 5</strong>
-                Pipeline diagram, example logs, or a small screenshot of an agent run summary.
-              </div>
-            </div>
-            <div class="note">
-              A simple diagram (boxes + arrows) looks very clean here.
-            </div>
-          </aside>
         </div>
       </section>
 
     </main>
 
-    <!-- Contact -->
     <section class="section" id="contact" aria-label="Contact">
       <div class="section-header">
         <div class="section-title">
@@ -767,12 +651,11 @@
           </div>
           <div>
             <h3>Contact</h3>
-            <div class="sub">Update these links with your real info</div>
+            <div class="sub">Reach me here</div>
           </div>
         </div>
         <div class="chips">
           <span class="chip">Email</span>
-          <span class="chip">GitHub</span>
           <span class="chip">LinkedIn</span>
         </div>
       </div>
@@ -780,28 +663,16 @@
       <div class="section-body">
         <div class="textblock">
           <ul>
-            <li><strong>Email:</strong> <a href="mailto:your.email@ucla.edu">your.email@ucla.edu</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">github.com/yourusername</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noreferrer">linkedin.com/in/yourusername</a></li>
+            <li><strong>Email:</strong> <a href="mailto:vierramarketing@gmail.com">vierramarketing@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anthony-vierra-pinecrest" target="_blank" rel="noreferrer">www.linkedin.com/in/anthony-vierra-pinecrest</a></li>
           </ul>
         </div>
-        <aside class="media" aria-label="Resume media">
-          <div class="box">
-            <div>
-              <strong>Add resume link (optional)</strong>
-              Drop a PDF into /assets and link it here.
-            </div>
-          </div>
-          <div class="note">
-            Example: &lt;a href="assets/Tony_Vierra_Resume.pdf"&gt;Download Resume&lt;/a&gt;
-          </div>
-        </aside>
       </div>
     </section>
 
     <footer>
       <div>
-        Built from the portfolio PDF wording.
+        <span>© <span id="year"></span> Tony Vierra</span>
       </div>
       <div>
         <a class="btn" href="#top">↑ Back to top</a>
@@ -824,6 +695,9 @@
       else root.removeAttribute('data-theme');
       localStorage.setItem('theme', next || '');
     });
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
